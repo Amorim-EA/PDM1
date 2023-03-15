@@ -1,17 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react-native';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 
-const getNomeCompleto = (p, s, t) => {return `${p} ${s} ${t}`};
-
-export default function App() {
+const Nome = () => {
   return (
-    <View style={styles.container}>
-      <Text>getNomeCompleto("Erick", "da Silva", "Amorim")</Text>
-    </View>
+  <View style={}>  
+  <Text>{}</Text>;
+  </View>
   );
 }
 
-const styles = StyleSheet.create({
-  
-});
+const Tel = (props) => {
+  return (
+  <View style={}>  
+  <Text>{props}</Text>;
+  </View>
+  );
+}
+
+export default function App() {
+  return (
+    <View style={}>
+     <Nome />
+     <Tel />
+     <TextInput 
+     defaultValue='Me de um nome pedin !'/>
+    </View>
+  );
+}
